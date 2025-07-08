@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: voice-ai-scheduler
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_REFRESH_TOKEN
+        sync: false
+      - key: GOOGLE_CALENDAR_ID
+        value: f0f1451112975623bd4a4ac0a77f920682c0096a87263cbba211aea4cf9cbe99@group.calendar.google.com
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: RETELL_API_KEY
+        value: key_9fe36107bebd527489f8672a7841
+      - key: RETELL_AGENT_ID
+        value: agent_622b81a0e3ba1650efa8d0932e
+      - key: FROM_PHONE_NUMBER
+        value: '+13808006454'
+      - key: APP_URL
+        value: https://voice-ai-agent.onrender.com
