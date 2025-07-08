@@ -1,20 +1,21 @@
-# Voice AI Scheduler
+# Voice AI Agent
 
-Automated voice AI scheduler that monitors Google Calendar events and makes phone calls using Retell AI.
+An autonomous voice AI agent that monitors Google Calendar and makes intelligent phone calls using Retell AI and OpenRouter. Designed to start natural conversations with clients and assist in sales or support — completely automatically.
 
 ## Features
 
-- 🕐 **Automated Scheduling**: Monitors Google Calendar every 5 minutes
-- 📞 **Smart Phone Calls**: Automatically calls clients based on calendar events
-- 🤖 **AI-Powered**: Uses OpenRouter AI to extract client information
-- 💓 **Keep Alive**: Prevents Render free tier from sleeping
-- 🔄 **Error Handling**: Robust error handling and fallback mechanisms
+- 🧠 Intelligent Conversations: Engages in polite, human-like voice calls — confirms identity, asks questions, and only pitches when appropriate
+- 🕐 Calendar-Aware: Monitors Google Calendar every 5 minutes for new events
+- 📞 Auto Calling: Places calls to clients based on event data
+- 🤖 Powered by OpenRouter: Extracts structured data from event descriptions using LLMs
+- 🛡️ Robust: Includes error handling and fallback flows
+- 💓 Keep Alive: Prevents Render free-tier from sleeping
 
 ## Setup
 
 ### 1. Environment Variables
 
-Create a `.env` file with the following variables:
+Create a `.env` file with the following:
 
 ```env
 # Google Calendar API
@@ -34,6 +35,7 @@ FROM_PHONE_NUMBER=your_from_phone_number
 # Server configuration
 PORT=3000
 APP_URL=https://your-app-name.onrender.com
+
 ```
 
 ### 2. Google Calendar Setup
@@ -71,7 +73,7 @@ Meeting Purpose: Demo of AI Telegram bot capabilities
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd voice-ai-scheduler
+cd voice-ai-agent
 
 # Install dependencies
 npm install
