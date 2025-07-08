@@ -24,4 +24,4 @@ services:
       - key: FROM_PHONE_NUMBER
         value: '+13808006454'
       - key: APP_URL
-        value: https://voice-ai-agent.onrender.com
+        value: https://voice-ai-agent-j5zt.onrender.com
